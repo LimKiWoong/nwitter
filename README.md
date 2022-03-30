@@ -2,6 +2,10 @@
 
 [3월 30일]
 firebase 연동
+index.js에 아래 코드 북봍(9버전이상)
+    import firebase from 'firebase/compat/app';
+    import 'firebase/compat/auth';
+    import 'firebase/compat/firestore';
 
 [3월 23일]
 $ git config --global user.name "LimKiWoong"
