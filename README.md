@@ -6,6 +6,7 @@ index.js에 아래 코드 북봍(9버전이상)
     import firebase from 'firebase/compat/app';
     import 'firebase/compat/auth';
     import 'firebase/compat/firestore';
+라우터를 이용해서 컴포넌트이동
 
 [3월 23일]
 $ git config --global user.name "LimKiWoong"
