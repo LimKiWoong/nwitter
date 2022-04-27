@@ -14,7 +14,7 @@ const AppRouter = () => {
                     </Route>
                 ) : (
                     <Route exact path="/">
-                        <Auth />
+                        <Auth/>
                     </Route>
                 )}
             </Switch>
