@@ -1,7 +1,8 @@
-import { authService } from "fbase"
+import { authService , dbService} from "fbase"
+import { useState,useEffect } from "react"
 import { useHistory } from "react-router-dom";
 
-const Profile = () => {
+const Profile = ({ userObj }) => {
 const history = useHistory();
 
     const onLogOutClick = () => {
@@ -16,4 +17,4 @@ const history = useHistory();
     );
 };
 
-export default Profile
+export default Profile;
