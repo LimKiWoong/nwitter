@@ -37,19 +37,19 @@ const Auth = () => {
 
   const toggleAccount = () => setNewAccount((prev) => !prev)
 
-  const onSocialClick = async (event) => {
+  const onSocialClick = async (e) => {
     const {
-      target: {name},
-    } = event;
-    let provider;
-    if(name === "google"){
-      provider = new firebaseInstance.auth.GoogleAuthProvider();
-    } else if (name === "github") {
-      provider = new firebaseInstance.auth.GithubAuthProvider();
+      target: {name}
+    } = e
+    let provider
+    if(name === "google") {
+      provider = new firebaseInstance.auth.GoogleAuthProvider()
+    } else if(name === "github") {
+      provider = new firebaseInstance.auth.GithubAuthProvider()
     }
-    const data = await authService.sighInWithPopup(provider);
-    console.log(data);
-  };
+    const data = await authService.signInWithPopup(provider)
+    console.log(data)
+  }
 
   return (
     <div>
